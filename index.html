@@ -1,28 +1,16 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable @next/next/no-img-element */
-import Layout from '@/components/Layout';
-import Link from 'next/link';
-import { NextPageWithLayout } from './_app';
-
-const PrivacyPage: NextPageWithLayout = () => {
-  return (
-    <Layout
-      className="privacy"
-      header={
-        <div className="flex w-full items-center justify-between px-2 desktop:justify-start">
-          <div className="flex cursor-pointer gap-[16px]">
-            <Link href="/">
-              <img src="/assets/images/logo.png" alt="Logo" />
-            </Link>
-          </div>
-        </div>
-      }
-    >
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Policy U2music</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div style="padding: 20px">
       <div className="mt-[100px] flex flex-col gap-[12px] px-4 font-normal desktop:mt-[152px] desktop:font-medium">
         <h1 className="mb-2 text-xl desktop:text-2xl">
           <b>U2Music Privacy Policy</b>
         </h1>
-        <p>Last modified: March 08, 2023</p>
+        <p>Last modified: October 10, 2023</p>
         <div>
           <h2>
             <b>INTRODUCTION</b>
@@ -32,13 +20,13 @@ const PrivacyPage: NextPageWithLayout = () => {
             policy <span className="font-semibold">"Policy"</span>.
           </p>
           <p>
-            This Policy describes how we collect, use, disclose and protect the personal information of the users of our{' '}
+            This Policy describes how we collect, use, disclose and protect the personal information of the users of
+            our{' '}
             <span className="font-semibold">"Website"</span> and our software application U2Music{' '}
             <span className="font-semibold">"Application"</span>, available on the iOS App Store and Google Play Store.
-            The use of {''}
-            <span className="font-semibold">"you"</span> {''}
-            in this Policy refers to anyone who visits our Website or who uses the Application. Our Website and the
-            Application are collectively referred to as the <span className="font-semibold">"Service"</span>.
+            The use of {''} <span className="font-semibold">"you"</span> {''} in this Policy refers to anyone who visits
+            our Website or who uses the Application. Our Website and the Application are collectively referred to as the
+            <span className="font-semibold">"Service"</span>.
           </p>
           <p>This Policy also explains your choices about how we manage your personal information.</p>
           <p>
@@ -48,9 +36,9 @@ const PrivacyPage: NextPageWithLayout = () => {
           </p>
           <p>This Policy applies to personal information we collect, use, or disclose about you:</p>
           <ul>
-            <li> On our Website.</li>
+            <li>On our Website.</li>
             <li>Through the Application.</li>
-            <li> In email, text, and other electronic messages between you and the Services.</li>
+            <li>In email, text, and other electronic messages between you and the Services.</li>
           </ul>
           <p>
             The Services may include links to third-party websites, services, social networks, or applications. Clicking
@@ -159,7 +147,7 @@ const PrivacyPage: NextPageWithLayout = () => {
             and maintain it, to deliver better and more personalized Services, including by enabling us to:
           </p>
           <ul className="flex flex-col gap-1">
-            <li> Estimate our audience size and usage patterns.</li>
+            <li>Estimate our audience size and usage patterns.</li>
             <li>
               Store information about your preferences, allowing us to customize our Services according to your
               individual interests.
@@ -413,82 +401,6 @@ const PrivacyPage: NextPageWithLayout = () => {
           </p>
         </div>
       </div>
-
-      <div className="px-4 pt-[60px] desktop:w-full desktop:pt-[104px]">
-        <div className="flex h-full w-full flex-col gap-[64px]">
-          <div className="flex flex-col px-4 desktop:flex-row desktop:justify-between">
-            <div>
-              <Link href="/">
-                <div className="mb-10 flex h-7 w-[121px] hover:cursor-pointer desktop:h-7 desktop:w-[121px]">
-                  <div className="w-25 flex h-9 cursor-pointer gap-[16px]">
-                    <img className="h-full w-full" src="/assets/images/logo.png" alt="Logo" />
-                  </div>
-                </div>
-              </Link>
-              <h4 className="mb-5 hidden font-medium desktop:block">Newsletter</h4>
-              <form action="#" className="hidden desktop:block">
-                <input
-                  className="mr-5 rounded-lg border-2 border-solid border-primary  py-3 pl-3 outline-none"
-                  type="text"
-                  placeholder="Email address..."
-                />
-                <button
-                  onClick={e => e.preventDefault()}
-                  className="w-[113px] rounded-lg bg-primary py-[14px] text-[#fff]"
-                >
-                  Subscribe
-                </button>
-              </form>
-            </div>
-            <div className="flex flex-row gap-20 desktop:flex-1 desktop:justify-evenly">
-              <div>
-                <h5 className="mb-7 text-lg font-medium">Sitemap</h5>
-                <ul>
-                  <li className="mb-5 cursor-pointer font-normal hover:text-primary">
-                    <Link href="/"> Home</Link>
-                  </li>
-                  <li className="mb-5 cursor-pointer font-normal hover:text-primary">Features</li>
-                  <li className="mb-5 cursor-pointer font-normal hover:text-primary">About</li>
-                  <li className="mb-5 cursor-pointer font-normal hover:text-primary">Download</li>
-                </ul>
-              </div>
-              <div className="mb-5">
-                <h5 className="mb-7 text-lg font-medium">Social</h5>
-                <ul>
-                  <li className="mb-5 cursor-pointer font-normal hover:text-primary">
-                    <Link href={'#'}>Facebook</Link>
-                  </li>
-                  <li className="mb-5 cursor-pointer font-normal hover:text-primary">
-                    <Link href={'#'}>LinkedIn</Link>
-                  </li>
-                  <li className="mb-5 cursor-pointer font-normal hover:text-primary">
-                    <Link href={'#'}>Instagram</Link>
-                  </li>
-                  <li className="mb-5 cursor-pointer font-normal hover:text-primary">
-                    <Link href={'#'}>Twitter</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div>
-              <h5 className="mb-7 text-lg font-medium">Head Office</h5>
-              <p className="mb-10 text-sm font-normal leading-[30px]">
-                C9 Lot D21, Dich Vong Hau Street Cau Giay, Hanoi - VN 11300
-              </p>
-              <Link href="/privacy">
-                <p className="mt-[-26px] cursor-pointer hover:text-primary">Privacy</p>
-              </Link>
-            </div>
-          </div>
-          <div className="flex items-center justify-center border-t-[1px] border-solid border-primary  py-7 text-sm font-normal leading-7 desktop:text-base">
-            <p>U2U Venture Builder Council</p>
-          </div>
-        </div>
-      </div>
-    </Layout>
-  );
-};
-
-PrivacyPage.getLayout = page => <>{page}</>;
-
-export default PrivacyPage;
+    </div>
+  </body>
+</html>
